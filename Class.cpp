@@ -17,7 +17,7 @@ class student{
     }
     void setage(int a){
         if(age<0 || age>100){
-            cout<<"invalid age";
+            cout<<"invalid age" <<endl;
             return ;
         }
         age = a;
@@ -63,6 +63,15 @@ int main(){
     s1.getage();
     s1.getRollNumber();
     s1.getgrade(234); // wrong pin
+
+    student *s= new student;
+    (*s).setName("Rohan");
+    (*s).setage(20);
+    s->setRollNumber(22);
+    (*s).setgrade("B+");
+    (*s).getname();
+    (*s).getage();
+    (*s).getRollNumber();
     return 0;
 
 }
