@@ -1,0 +1,1 @@
+// in mulit level inheritance the can inittalize all base class protected variables
